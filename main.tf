@@ -1,4 +1,4 @@
-variable "name" {}
+ivariable "name" {}
 variable "location" {}
 variable "username" {}
 variable "password" {}
@@ -12,7 +12,7 @@ variable "vnet_address_spacing" {
 }
 
 variable "subnet_address_prefixes" {
-  type = "list"
+ i type = "list"
 }
 
 module "networking" {
@@ -35,6 +35,7 @@ module "networking" {
   vm_count  = 1
   username  = var.username
   password  = var.password
+  //Karthik
 }
 
 module "appserver" {
